@@ -1,0 +1,75 @@
+[
+  {
+    "uri": "https://platform.ringcentral.com/restapi/v1.0/account/~/extension/~/call-log?page=1&perPage=2",
+    "records": [
+      {
+        "id": "rc-call-001",
+        "sessionId": "100000000001",
+        "telephonySessionId": "s-example-001",
+        "type": "Voice",
+        "startTime": "2026-10-24T08:00:00.125Z",
+        "duration": 65,
+        "durationMs": 65250,
+        "direction": "Inbound",
+        "result": "Accepted",
+        "from": {"phoneNumber": "+442079460001", "name": "Example Caller"},
+        "to": {"phoneNumber": "+442079460002", "extensionNumber": "0201"},
+        "recording": {
+          "id": "recording-001",
+          "uri": "https://platform.ringcentral.com/restapi/v1.0/account/~/recording/recording-001",
+          "contentUri": "https://media.ringcentral.com/restapi/v1.0/account/~/recording/recording-001/content"
+        },
+        "legs": [
+          {"legType": "Accept", "extension": {"id": 900000001}},
+          {"legType": "PstnToSip", "extension": {"id": 900000001}}
+        ]
+      },
+      {
+        "id": "rc-call-002",
+        "sessionId": "100000000002",
+        "type": "Voice",
+        "startTime": "2026-10-24T10:05:00+02:00",
+        "duration": 12,
+        "direction": "Outbound",
+        "result": "Busy",
+        "from": {"phoneNumber": "+442079460002", "extensionNumber": "202"},
+        "to": {"phoneNumber": "+442079460003"}
+      }
+    ],
+    "paging": {"page": 1, "totalPages": 2, "perPage": 2, "totalElements": 4},
+    "navigation": {
+      "firstPage": {"uri": "https://platform.ringcentral.com/restapi/v1.0/account/~/extension/~/call-log?page=1&perPage=2"},
+      "nextPage": {"uri": "https://platform.ringcentral.com/restapi/v1.0/account/~/extension/~/call-log?page=2&perPage=2"}
+    }
+  },
+  {
+    "uri": "https://platform.ringcentral.com/restapi/v1.0/account/~/extension/~/call-log?page=2&perPage=2",
+    "records": [
+      {
+        "id": "rc-call-003",
+        "type": "Voice",
+        "startTime": "2026-10-24T08:10:00Z",
+        "duration": 30,
+        "direction": "Inbound",
+        "result": "Missed",
+        "from": {"phoneNumber": "+442079460004"},
+        "to": {"extensionNumber": "203"}
+      },
+      {
+        "id": "rc-call-004",
+        "type": "Voice",
+        "startTime": "2026-10-24T08:15:00Z",
+        "duration": 10,
+        "direction": "Outbound",
+        "result": "Call connected",
+        "from": {"extensionNumber": "202"},
+        "to": {"phoneNumber": "+442079460005"},
+        "extension": {"id": 900000002}
+      }
+    ],
+    "paging": {"page": 2, "totalPages": 2, "perPage": 2, "totalElements": 4},
+    "navigation": {
+      "previousPage": {"uri": "https://platform.ringcentral.com/restapi/v1.0/account/~/extension/~/call-log?page=1&perPage=2"}
+    }
+  }
+]

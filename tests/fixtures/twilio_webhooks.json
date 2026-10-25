@@ -1,0 +1,46 @@
+[
+  {
+    "CallSid": "CA00000000000000000000000000000005",
+    "AccountSid": "AC00000000000000000000000000000000",
+    "From": "+442079460001",
+    "To": "+442079460002",
+    "Direction": "outbound-api",
+    "CallStatus": "initiated",
+    "Timestamp": "Sat, 24 Oct 2026 08:20:00 +0000",
+    "CallbackSource": "call-progress-events",
+    "SequenceNumber": "0"
+  },
+  {
+    "CallSid": "CA00000000000000000000000000000005",
+    "From": "+442079460001",
+    "To": "+442079460002",
+    "Direction": "outbound-api",
+    "CallStatus": "ringing",
+    "Timestamp": "Sat, 24 Oct 2026 08:20:02 +0000",
+    "CallbackSource": "call-progress-events",
+    "SequenceNumber": "1"
+  },
+  {
+    "CallSid": "CA00000000000000000000000000000005",
+    "From": "+442079460001",
+    "To": "+442079460002",
+    "Direction": "outbound-api",
+    "CallStatus": "in-progress",
+    "Timestamp": "Sat, 24 Oct 2026 08:20:05 +0000",
+    "CallbackSource": "call-progress-events",
+    "SequenceNumber": "2"
+  },
+  {
+    "CallSid": "CA00000000000000000000000000000005",
+    "From": "+442079460001",
+    "To": "+442079460002",
+    "Direction": "outbound-api",
+    "CallStatus": "completed",
+    "Timestamp": "Sat, 24 Oct 2026 08:21:05 +0000",
+    "CallDuration": "60",
+    "Duration": "2",
+    "RecordingUrl": "https://api.twilio.com/2010-04-01/Accounts/AC00000000000000000000000000000000/Recordings/RE00000000000000000000000000000001",
+    "CallbackSource": "call-progress-events",
+    "SequenceNumber": "3"
+  }
+]

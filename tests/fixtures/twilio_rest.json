@@ -1,0 +1,51 @@
+{
+  "uri": "/2010-04-01/Accounts/AC00000000000000000000000000000000/Calls.json",
+  "calls": [
+    {
+      "sid": "CA00000000000000000000000000000001",
+      "account_sid": "AC00000000000000000000000000000000",
+      "from": "+442079460001",
+      "to": "+442079460002",
+      "direction": "inbound",
+      "status": "completed",
+      "start_time": "Sat, 24 Oct 2026 08:00:00 +0000",
+      "end_time": "Sat, 24 Oct 2026 08:01:00 +0000",
+      "duration": "60",
+      "subresource_uris": {
+        "recordings": "/2010-04-01/Accounts/AC00000000000000000000000000000000/Calls/CA00000000000000000000000000000001/Recordings.json"
+      }
+    },
+    {
+      "sid": "CA00000000000000000000000000000002",
+      "from": "client:agent-201",
+      "to": "sip:desk@example.test",
+      "direction": "outbound-dial",
+      "status": "ringing",
+      "start_time": "Sat, 24 Oct 2026 08:05:00 +0000",
+      "end_time": null,
+      "duration": null
+    },
+    {
+      "sid": "CA00000000000000000000000000000003",
+      "from": "+442079460002",
+      "to": "+442079460003",
+      "direction": "outbound-api",
+      "status": "no-answer",
+      "start_time": "Sat, 24 Oct 2026 08:10:00 +0000",
+      "end_time": null,
+      "duration": ""
+    },
+    {
+      "sid": "CA00000000000000000000000000000004",
+      "from": "+442079460002",
+      "to": "+442079460004",
+      "direction": "outbound-api",
+      "status": "queued",
+      "start_time": null,
+      "end_time": null,
+      "date_created": "Sat, 24 Oct 2026 08:15:00 +0000",
+      "duration": null
+    }
+  ],
+  "next_page_uri": null
+}
